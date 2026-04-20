@@ -1,0 +1,77 @@
+{
+  "meta": {"novel_name": "影帝的替身新娘", "genre": "甜宠"},
+  "cast_config": {
+    "protagonist_count": 2,
+    "protagonist_gender": "双（女主+男主）",
+    "required_archetypes": [
+      {"archetype": "甜宠女主（小透明逆袭型）", "function": "承载读者代入，从自卑到被爱", "frequency": "9/10篇甜宠文"},
+      {"archetype": "暗恋型男主（高冷+深情）", "function": "提供极致甜宠，暗恋反差萌", "frequency": "9/10篇"}
+    ],
+    "optional_archetypes": [
+      {"archetype": "毒舌经纪人", "function": "提供喜剧元素+推动剧情", "frequency": "6/10篇"},
+      {"archetype": "反派情敌", "function": "制造小冲突（本文弱化）", "frequency": "5/10篇"}
+    ],
+    "total_range": "3-6人"
+  },
+  "character_archetypes": [
+    {
+      "archetype_name": "甜宠女主（小透明逆袭型）",
+      "traits": ["接地气", "自嘲型幽默", "善良", "努力"],
+      "typical_arc": "经济困境 → 被迫接受合约 → 发现男主真心 → 打开心扉 → 被宠爱",
+      "motivation": "还债+照顾妈妈 → 后来变成追求真爱",
+      "weakness": "自卑，不相信自己值得被爱",
+      "language_profile": {
+        "sentence_pattern": "短句+碎碎念，内心戏多，吐槽感强",
+        "vocabulary": "口语化，网络用语，自嘲",
+        "catchphrase_patterns": ["干！", "冷静", "好家伙"],
+        "example_lines": [
+          "干！",
+          "冷静，苏晚晚，你要冷静。这只是演戏。只是演戏！",
+          "好家伙，她在人设里居然是个恋爱脑舔狗？"
+        ]
+      }
+    },
+    {
+      "archetype_name": "暗恋型男主（高冷影帝）",
+      "traits": ["外冷内热", "行动派", "暗恋十年", "反差萌"],
+      "typical_arc": "暗恋多年 → 借合约接近 → 暗中对女主好 → 掉马甲 → 光明正大宠",
+      "motivation": "找她找了十年",
+      "weakness": "不善表达感情，习惯用行动代替言语",
+      "language_profile": {
+        "sentence_pattern": "短句+陈述句，语气淡但有分量",
+        "vocabulary": "简洁，偶尔温柔",
+        "catchphrase_patterns": ["进来", "不用演", "不可能找不到"],
+        "example_lines": [
+          "进来。",
+          "你就是你，不用演。",
+          "不可能找不到。因为我会一直找。就算找一辈子，我也会找到你。"
+        ]
+      }
+    }
+  ],
+  "relationship_patterns": [
+    {
+      "pattern_name": "合约恋爱变真爱",
+      "characters": ["甜宠女主", "暗恋型男主"],
+      "typical_arc": "假恋爱合约 → 同居磨合 → 暗糖积累 → 掉马甲 → 真正在一起",
+      "trigger_event": "合约开始/男主暗中对女主好",
+      "frequency": "8/10篇甜宠文"
+    },
+    {
+      "pattern_name": "小透明逆袭",
+      "characters": ["甜宠女主", "外界（嘲笑者）"],
+      "typical_arc": "被看不起 → 被影帝宠爱 → 众人震惊 → 自信绽放",
+      "trigger_event": "影帝公开恋情",
+      "frequency": "7/10篇"
+    }
+  ],
+  "arc_templates": [
+    {
+      "arc_type": "被爱觉醒型",
+      "start": "自卑/不相信自己值得被爱/经济困境",
+      "trigger": "男主的持续温柔行动（非表白）",
+      "transition": "心动→纠结→确认→敞开心扉",
+      "end": "自信且被深爱"
+    }
+  ]
+}
