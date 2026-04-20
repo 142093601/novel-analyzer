@@ -1,0 +1,50 @@
+{
+  "meta": {"novel_name": "影帝的替身新娘", "genre": "甜宠", "total_chapters": 6, "total_words": 18000, "structure_type": "甜宠六幕式"},
+  "templates": [{
+    "name": "合约恋爱变真爱",
+    "one_liner": "十八线小演员被迫当影帝的合约女友，结果发现影帝暗恋她十年",
+    "applicable_scenarios": "甜宠、合约恋爱、替身反转、暗恋成真",
+    "beats": [
+      {"step": 1, "description": "女主接受合约：经济困境驱动，被迫当影帝的假女友", "tension": 5, "emotion": "紧张+忐忑"},
+      {"step": 2, "description": "同居磨合：生活习惯碰撞，暗糖不断（做早餐/送礼物）", "tension": 3, "emotion": "甜+心动"},
+      {"step": 3, "description": "暗糖升温：男主暗中对女主好，女主心动但不敢确认", "tension": 4, "emotion": "暧昧+纠结"},
+      {"step": 4, "description": "掉马甲：发现男主真实感情（暗恋十年/找她很久）", "tension": 7, "emotion": "震惊+感动"},
+      {"step": 5, "description": "正式在一起：甜蜜日常，双向奔赴", "tension": 2, "emotion": "超甜"},
+      {"step": 6, "description": "婚后生活：终极甜，收尾温暖", "tension": 2, "emotion": "幸福+满足"}
+    ]
+  }],
+  "conflict_chain": [
+    {"level": "表层", "description": "合约女友的身份尴尬——被外界误解、被同行嘲笑", "example": "因为你好控制啊！没后台，没背景"},
+    {"level": "利益", "description": "女主的经济困境 vs 合约的金钱诱惑", "example": "三十万！够她还清大半的债务，够她妈再住两个月的好医院"},
+    {"level": "价值观", "description": "假装恋爱 vs 真心相爱——感情能不能用钱买", "example": "不许喜欢我吗？"},
+    {"level": "情感", "description": "暗恋十年的心酸——男主一直找她，她完全不知道", "example": "你说你找了我十年，那你有没有想过，如果找不到我怎么办？"}
+  ],
+  "pleasure_points": [
+    {"chapter": 1, "type": "小", "subtype": "反差", "description": "高冷影帝亲自下厨做饭给女主吃", "intensity": 5, "technique": "反差萌", "example": "我做饭给你吃，你觉得很感动，然后我们就在一起了"},
+    {"chapter": 2, "type": "小", "subtype": "甜", "description": "同居日常中的暗糖：做早餐、记喜好", "intensity": 5, "technique": "细节撒糖", "example": "冰箱里有吃的，随便用"},
+    {"chapter": 3, "type": "中", "subtype": "甜", "description": "男主暗中帮女主争取角色/挡麻烦", "intensity": 6, "technique": "守护型甜", "example": ""},
+    {"chapter": 4, "type": "大", "subtype": "揭露", "description": "掉马甲：男主暗恋女主十年，一直找她", "intensity": 8, "technique": "身份揭露四步", "example": "我会一直找。就算找一辈子，我也会找到你"},
+    {"chapter": 5, "type": "中", "subtype": "甜", "description": "正式恋爱后的甜蜜日常", "intensity": 7, "technique": "密集撒糖", "example": ""},
+    {"chapter": 6, "type": "大", "subtype": "甜", "description": "求婚+婚后生活+终极告白", "intensity": 8, "technique": "情感升华", "example": "最幸福的事情啊……是我爱的人，刚好也爱我"}
+  ],
+  "reversals": [
+    {"chapter": 1, "type": "身份反转", "setup_chapter": 0, "description": "表面是替身合约女友，实际是男主找了十年的人", "formula": "假替身 → 真命天女"},
+    {"chapter": 4, "type": "动机反转", "setup_chapter": 1, "description": "表面是被逼找人挡桃花，实际是借机接近暗恋对象", "formula": "以为是利用 → 其实是暗恋"}
+  ],
+  "emotional_arc": [
+    {"chapter": 1, "emotion": "紧张", "intensity": 5, "trend": "起"},
+    {"chapter": 2, "emotion": "甜", "intensity": 5, "trend": "升"},
+    {"chapter": 3, "emotion": "暧昧", "intensity": 6, "trend": "升"},
+    {"chapter": 4, "emotion": "震惊+感动", "intensity": 8, "trend": "弹"},
+    {"chapter": 5, "emotion": "超甜", "intensity": 7, "trend": "高位"},
+    {"chapter": 6, "emotion": "幸福", "intensity": 8, "trend": "收"}
+  ],
+  "chapter_hooks": [
+    {"chapter": 1, "hook_type": "悬念钩", "description": "影帝说'不许喜欢我'——但又说'我们是真心相爱的'，矛盾感"},
+    {"chapter": 2, "hook_type": "情感钩", "description": "男主说'不用演，你就是你'——暗示真实感情"},
+    {"chapter": 3, "hook_type": "悬念钩", "description": "男主暗中做了什么？"},
+    {"chapter": 4, "hook_type": "反转钩", "description": "暗恋十年的真相揭开"},
+    {"chapter": 5, "hook_type": "情感钩", "description": "甜蜜日常的延续"},
+    {"chapter": 6, "hook_type": "情感钩", "description": "最幸福的事情——是我爱的人刚好也爱我"}
+  ]
+}
