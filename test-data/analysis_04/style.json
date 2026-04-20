@@ -1,0 +1,110 @@
+{
+  "meta": {"novel_name": "影帝的替身新娘", "genre": "甜宠"},
+  "opening_hook": {
+    "type": "C.地狱开局",
+    "structure": "女主是十八线小演员（最底层）→ 收到影帝合约短信（天上掉馅饼但有风险）→ 经济困境驱动她接受（别无选择）",
+    "effect": "读者代入底层逆袭的爽感 + 好奇影帝为什么找她",
+    "example": "作为一个出道三年还在演丫鬟甲、路人乙、尸体丙的十八线小演员，三十万是什么概念？"
+  },
+  "dialogue_techniques": [
+    {
+      "name": "高冷简短 vs 碎碎念反差",
+      "formula": "男主短句冷淡 + 女主内心疯狂OS/碎碎念",
+      "example": "顾言之：\"进来。\"……苏晚晚内心：近距离看，这张脸真的能杀人。轮廓分明的脸上，剑眉斜飞入鬓……",
+      "usage": "男女主互动的标配，制造反差萌",
+      "frequency": "15次"
+    },
+    {
+      "name": "自嘲型吐槽",
+      "formula": "女主自嘲 + 内心吐槽 + 行动反差",
+      "example": "干！/ 好家伙，她在人设里居然是个恋爱脑舔狗？/ 苏晚晚嘴角抽了抽",
+      "usage": "制造喜剧效果，增强女主亲和力",
+      "frequency": "10次"
+    },
+    {
+      "name": "暗糖式温柔",
+      "formula": "男主表面冷淡 + 行动温柔（做早餐/记住喜好/暗中帮忙）",
+      "example": "冰箱里有吃的，随便用。/ 你就是你，不用演。",
+      "usage": "不靠甜言蜜语，靠行动撒糖",
+      "frequency": "8次"
+    },
+    {
+      "name": "脸红心跳描写",
+      "formula": "身体反应 + 心理活动（否认心动）",
+      "example": "苏晚晚的脸爆红……苏晚晚的心跳突然漏了一拍。冷静，苏晚晚，你要冷静。",
+      "usage": "女主心动但不敢承认的阶段",
+      "frequency": "6次"
+    }
+  ],
+  "pleasure_techniques": [
+    {
+      "name": "反差萌暴击",
+      "structure": {
+        "press": "男主高冷形象（进来/不用演/不许喜欢我）",
+        "show": "男主做出反差行为（亲自做饭/暗中帮忙/温柔细节）",
+        "pop": "女主心动 + 读者尖叫"
+      },
+      "example_chapter": 1,
+      "intensity": 6,
+      "example": "我做饭给你吃，你觉得很感动，然后我们就在一起了。顾言之的语气太过理所当然。"
+    },
+    {
+      "name": "暗恋十年暴击（掉马甲）",
+      "structure": {
+        "press": "女主以为自己是替身/工具人",
+        "show": "男主说出真相：找了她十年",
+        "pop": "女主震惊感动 + 读者甜到爆炸"
+      },
+      "example_chapter": 4,
+      "intensity": 9,
+      "example": "我会一直找。就算找一辈子，我也会找到你。因为你出现的那一刻，我就知道，你是我这辈子唯一想要的人。"
+    },
+    {
+      "name": "终极甜蜜收尾",
+      "structure": {
+        "press": "（无压迫，纯甜）",
+        "show": "婚后生活+告白+未来承诺",
+        "pop": "读者满足感最大化"
+      },
+      "example_chapter": 6,
+      "intensity": 8,
+      "example": "最幸福的事情啊……是我爱的人，刚好也爱我。"
+    }
+  ],
+  "rhythm_profile": {
+    "avg_dialogue_ratio": "45%",
+    "avg_sentence_length": 12,
+    "tension_pattern": "低开→平稳→小高潮（掉马甲）→高位甜蜜→温暖收尾",
+    "chapter_transition_style": "情感留白+甜蜜延续",
+    "chapter_rhythm": [
+      {"phase": "开篇（第1章）", "dialogue_ratio": "50%", "sentence_length": 11, "density": "中", "mood": "紧张+搞笑"},
+      {"phase": "同居（第2-3章）", "dialogue_ratio": "45%", "sentence_length": 12, "density": "低", "mood": "甜+暧昧"},
+      {"phase": "掉马甲（第4章）", "dialogue_ratio": "40%", "sentence_length": 14, "density": "高", "mood": "震惊+感动"},
+      {"phase": "甜蜜（第5-6章）", "dialogue_ratio": "50%", "sentence_length": 13, "density": "低", "mood": "超甜+幸福"}
+    ]
+  },
+  "golden_lines": [
+    {
+      "formula": "承诺式",
+      "structure": "你问X → 不可能X → 因为我会一直Y",
+      "example": "你说你找了我十年，那你有没有想过，如果找不到我怎么办？……不可能找不到。因为我会一直找。就算找一辈子，我也会找到你。",
+      "usage": "男主告白/承诺的高光时刻"
+    },
+    {
+      "formula": "对比总结式",
+      "structure": "最X的事情啊……是Y刚好也Z",
+      "example": "最幸福的事情啊……是我爱的人，刚好也爱我。",
+      "usage": "结尾升华"
+    },
+    {
+      "formula": "反差简短式",
+      "structure": "简短冷淡的表达 + 含义深远",
+      "example": "你就是你，不用演。/ 下辈子太远了，我只要这辈子。",
+      "usage": "男主关键时刻的台词"
+    }
+  ],
+  "hook_statistics": {
+    "most_used_type": "情感钩",
+    "types_used": {"悬念钩": 2, "情感钩": 4, "反转钩": 1}
+  }
+}
