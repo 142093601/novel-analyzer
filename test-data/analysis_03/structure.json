@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "novel_name": "重生后，我把订婚宴变成了修罗场",
+    "genre": "重生复仇",
+    "total_chapters": 7,
+    "total_words": 15000,
+    "structure_type": "重生复仇七拍式"
+  },
+  "templates": [
+    {
+      "name": "订婚宴修罗场复仇",
+      "one_liner": "重生到订婚宴，带着前世记忆拆穿渣男白莲花，当场把婚礼变审判",
+      "applicable_scenarios": "重生复仇、先虐后爽、渣男打脸",
+      "beats": [
+        {"step": 1, "description": "前世惨死（被渣男+白莲花害死）→ 重生回关键节点", "tension": 8, "emotion": "愤怒+庆幸"},
+        {"step": 2, "description": "假装正常，暗中观察身边所有人，识别谁是敌人谁是盟友", "tension": 5, "emotion": "隐忍+警觉"},
+        {"step": 3, "description": "主动出击：接触关键知情人（律师/老员工），收集证据", "tension": 6, "emotion": "紧张+期待"},
+        {"step": 4, "description": "发现更深层真相（父亲死因有疑、遗嘱设计），找到盟友", "tension": 7, "emotion": "震惊+坚定"},
+        {"step": 5, "description": "步步为营：职场中压制白莲花，感情上试探渣男", "tension": 6, "emotion": "小爽+积累"},
+        {"step": 6, "description": "高潮：关键场合（订婚宴/发布会）当众揭露真相", "tension": 9, "emotion": "大爽+解气"},
+        {"step": 7, "description": "收网：恶人得到惩罚，女主获得新生，与真命天子携手", "tension": 4, "emotion": "释然+温暖"}
+      ]
+    }
+  ],
+  "conflict_chain": [
+    {"level": "表层", "description": "订婚宴上的虚假祝福 vs 女主内心的暗涌", "example": "宾客祝福声此起彼伏，我微微笑着，心里却有一丝说不出的不安"},
+    {"level": "利益", "description": "林氏集团继承权之争——遗嘱、股份、公司控制权", "example": "老太爷把股份转到信托基金名下，要等她结婚后才能过户"},
+    {"level": "价值观", "description": "真心 vs 利用——爱情和亲情到底值多少", "example": "子墨从来就没爱过你，他接近你，只是因为你是林氏集团的继承人"},
+    {"level": "情感", "description": "被最亲的人背叛——未婚夫和同父异母的妹妹联手害死自己", "example": "火焰吞噬一切的那一刻，我终于看清了那张脸"}
+  ],
+  "pleasure_points": [
+    {"chapter": 2, "type": "小", "subtype": "打脸", "description": "女主不喝周雅芝的牛奶（暗示不信任），暗中联系律师", "intensity": 5, "technique": "压-亮-弹", "example": "我接过牛奶，却没有喝"},
+    {"chapter": 3, "type": "中", "subtype": "揭露", "description": "发现宋子墨和林晚的聊天记录，真相逐步浮出", "intensity": 7, "technique": "信息差揭露", "example": "念念好骗，只要对她好，她就会死心塌地"},
+    {"chapter": 4, "type": "中", "subtype": "打脸", "description": "在采购部压制林晚，职场中建立权威", "intensity": 6, "technique": "递进打脸", "example": "林晚的脸一阵红一阵白"},
+    {"chapter": 5, "type": "大", "subtype": "众人震惊", "description": "订婚宴上当众播放宋子墨和林晚的视频，全场哗然", "intensity": 9, "technique": "当众打脸三连击", "example": "全场安静了三秒，然后炸开了锅"},
+    {"chapter": 6, "type": "大", "subtype": "胜利", "description": "宋子墨和林晚的阴谋被彻底揭穿，法律制裁", "intensity": 8, "technique": "身份揭露四步", "example": "原来从头到尾，他们都是在演戏"}
+  ],
+  "reversals": [
+    {"chapter": 1, "type": "身份反转", "setup_chapter": 0, "description": "女主从被蒙蔽的傻白甜变成重生复仇者", "formula": "前世惨死 → 重生 → 知道所有人真面目"},
+    {"chapter": 3, "type": "动机反转", "setup_chapter": 2, "description": "发现宋子墨接近自己的真实目的", "formula": "以为是真爱 → 发现是精心设计的骗局"},
+    {"chapter": 5, "type": "立场反转", "setup_chapter": 4, "description": "一直以为的慈母周雅芝实际是幕后推手", "formula": "慈母形象 → 蛇蝎心肠"}
+  ],
+  "emotional_arc": [
+    {"chapter": 1, "emotion": "憋屈", "intensity": 9, "trend": "压"},
+    {"chapter": 2, "emotion": "隐忍", "intensity": 5, "trend": "积累"},
+    {"chapter": 3, "emotion": "震惊", "intensity": 7, "trend": "积累"},
+    {"chapter": 4, "emotion": "小爽", "intensity": 6, "trend": "弹"},
+    {"chapter": 5, "emotion": "大爽", "intensity": 9, "trend": "弹"},
+    {"chapter": 6, "emotion": "解气", "intensity": 8, "trend": "弹"},
+    {"chapter": 7, "emotion": "释然", "intensity": 5, "trend": "收"}
+  ],
+  "chapter_hooks": [
+    {"chapter": 1, "hook_type": "悬念钩", "description": "重生后第一件事：这一世我绝不会让你们得逞"},
+    {"chapter": 2, "hook_type": "悬念钩", "description": "联系张律师，暗示遗嘱有秘密"},
+    {"chapter": 3, "hook_type": "反转钩", "description": "发现宋子墨和林晚是高中同学/前恋人"},
+    {"chapter": 4, "hook_type": "危机钩", "description": "遗嘱中的信托基金条款——父亲的考验"},
+    {"chapter": 5, "hook_type": "反转钩", "description": "订婚宴视频即将播放"},
+    {"chapter": 6, "hook_type": "情感钩", "description": "恶人伏法，新的感情线出现"},
+    {"chapter": 7, "hook_type": "情感钩", "description": "三年后巴厘岛婚礼"}
+  ]
+}
