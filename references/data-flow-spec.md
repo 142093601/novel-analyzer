@@ -21,9 +21,11 @@
                      │ → 3个 .md 文件   │
                      └─────────────────┘
                               ↓
-              {type}-structure.md    (→ plot-design.md 格式)
-              {type}-characters.md   (→ character-design.md 格式)
-              {type}-techniques.md   (→ writing-techniques.md 格式)
+              plot-design-append.md       (→ ## 🏷️ {类型} 追加到 plot-design.md)
+              character-design-append.md  (→ ## 🏷️ {类型} 追加到 character-design.md)
+              writing-techniques-append.md(→ ## 🏷️ {类型} 追加到 writing-techniques.md)
+              emotion-curve-append.md     (→ ## 🏷️ {类型} 追加到 emotion-curve.md)
+              slim/ (→ ## 🏷️ {类型} 精简版追加到 slim/ 目录)
 ```
 
 ---
@@ -331,12 +333,20 @@
 
 ## 任务
 
-根据以上三个 JSON，生成 3 个 Writer-ready reference 文件：
-1. `{genre}-structure.md` — 从 structure.json 的 templates/conflict_chain/pleasure_points/reversals/emotional_arc/chapter_hooks 生成
-2. `{genre}-characters.md` — 从 characters.json 的 cast_config/character_archetypes/relationship_patterns/arc_templates 生成
-3. `{genre}-techniques.md` — 从 style.json 的 opening_hook/dialogue_techniques/pleasure_techniques/rhythm_profile/golden_lines 生成
+根据以上三个 JSON，生成 4 个 Writer-ready 标签段落 + 3 个 slim 精简版：
 
-严格按 SKILL.md 中定义的 Writer-ready 格式输出。每个技法必须附原文例句。
+**完整版（4个文件，每个以 ## 🏷️ {类型} 开头）：**
+1. `plot-design-append.md` — 从 structure.json 的 templates/conflict_chain/pleasure_points/reversals/chapter_hooks 生成
+2. `character-design-append.md` — 从 characters.json 的 cast_config/character_archetypes/relationship_patterns/arc_templates 生成
+3. `writing-techniques-append.md` — 从 style.json 的 opening_hook/dialogue_techniques/pleasure_techniques/rhythm_profile/golden_lines 生成
+4. `emotion-curve-append.md` — 从 structure.json 的 emotional_arc 生成（标准情绪曲线 + 情绪节奏公式 + 关键情绪转换点）
+
+**Slim 精简版（3个文件，每个 ~500字）：**
+5. `slim/plot-design-slim.md` — 剧情模板精简版
+6. `slim/character-design-slim.md` — 角色原型精简版
+7. `slim/writing-techniques-slim.md` — 写作技法精简版
+
+所有文件格式严格按 SKILL.md 定义的标签格式输出。每个技法必须附原文例句。
 ```
 
 ---
@@ -359,3 +369,4 @@
 | `style.pleasure_techniques` | `{genre}-techniques.md` | 爽点实现技法 |
 | `style.rhythm_profile` | `{genre}-techniques.md` | 节奏控制参考 |
 | `style.golden_lines` | `{genre}-techniques.md` | 金句公式 |
+| `structure.emotional_arc` | `emotion-curve-append.md` | 标准情绪曲线 + 情绪节奏公式 + 关键情绪转换点 |

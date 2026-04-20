@@ -55,36 +55,52 @@ Analyst → Synthesizer 的 JSON schema 定义在 `references/data-flow-spec.md`
 
 **novel-analyzer 的最终产物不是给人看的分析报告，而是给 Writer 用的写作素材。**
 
-输出格式必须匹配 novel-writer 的 `references/` 文件规范：
+输出内容以 `## 🏷️ {类型}` 标签格式追加到 novel-writer 的现有 reference 文件中（plot-design.md / character-design.md / writing-techniques.md / emotion-curve.md），而非生成独立文件。每个类型的内容在文件内以标签分区，互不干扰。
 
-| 输出文件 | 对标 novel-writer 参考 | Writer 使用阶段 |
-|----------|----------------------|----------------|
-| `{type}-structure.md` | `plot-design.md` | Planner 大纲阶段 |
-| `{type}-characters.md` | `character-design.md` | Planner 大纲阶段 |
-| `{type}-techniques.md` | `writing-techniques.md` | Writer 写作阶段 |
-| `{type}-worldbuilding.md` | `worldbuilding.md` | Planner 大纲阶段（如适用） |
+| 输出内容 | 追加到 novel-writer 文件 | Writer 使用阶段 |
+|----------|------------------------|----------------|
+| `## 🏷️ {类型}` 剧情模板 | `references/plot-design.md` | Planner 大纲阶段 |
+| `## 🏷️ {类型}` 角色原型 | `references/character-design.md` | Planner 大纲阶段 |
+| `## 🏷️ {类型}` 写作技法 | `references/writing-techniques.md` | Writer 写作阶段 |
+| `## 🏷️ {类型}` 情绪曲线 | `references/emotion-curve.md` | Planner 大纲阶段 |
+| `## 🏷️ {类型}` 世界观 | `references/worldbuilding.md` | Planner 大纲阶段（如适用） |
 
-### Writer-ready 格式规范
+### Writer-ready 格式规范（标签追加模式）
 
-所有输出文件必须遵循以下格式（Writer 可直接嵌入 task 使用）：
+所有输出内容以 `## 🏷️ {类型}` 标签格式**追加**到 novel-writer 的对应 reference 文件中。每个类型在文件内独立成段，通过标签定位。
 
 ```markdown
-# {类型} 参考
+## 🏷️ 重生复仇
 
-> 来源：{小说名/批次} 分析。写作阶段按需加载。
+> 来源：2篇重生复仇小说分析。大纲阶段使用。
 
-## 模板区
-**{模板名}：** {一句话描述}
-- 步骤/节拍描述
-- ...
+### 核心剧情模板（2种）
 
-## 公式区
-**{技法名}：** {公式/模式} — {例句}
+#### 模板1：订婚宴修罗场复仇
+**一句话：** ...
+**适用场景：** ...
+**节拍表：**
+1. ... — 张力 X/10
+2. ... — 张力 X/10
 
-## 清单区
-- 检查项1
-- 检查项2
+### 冲突升级链
+...
+
+### 反转技法库
+...
+
+### 爽点节奏公式
+...
 ```
+
+**追加规则：**
+- 同一类型的内容只输出一次，以 `## 🏷️ {类型}` 开头
+- 如果目标文件中已有该类型的标签段落，应先检查是否需要更新而非重复追加
+- 每个标签段落自成一体，包含该类型在该维度的全部内容
+
+**同时输出 slim 精简版：**
+- 每个完整段落同时生成一个 `## 🏷️ {类型}` 的 slim 版（追加到 novel-writer 的 `references/slim/` 下对应文件）
+- slim 版只保留核心规则和模板名称（~500-800字），不含详细例句和解释
 
 **禁止输出**：纯叙述性的分析段落（"这部小说的主题是..."）。  
 **必须输出**：可复用的模板、公式、检查清单（"复仇文五幕式：① ② ③ ④ ⑤"）。
@@ -154,9 +170,14 @@ Synthesizer 输出 3-4 个文件：
 ```
 novel-analyzer/output/{novel-name}/
 ├── analysis-report.md          ← 完整分析报告（人读）
-├── {novel-name}-structure.md   ← Writer-ready 剧情模板
-├── {novel-name}-characters.md  ← Writer-ready 角色原型
-└── {novel-name}-techniques.md  ← Writer-ready 写作技法
+├── plot-design-append.md       ← 🏷️ 段落，追加到 novel-writer/references/plot-design.md
+├── character-design-append.md  ← 🏷️ 段落，追加到 novel-writer/references/character-design.md
+├── writing-techniques-append.md← 🏷️ 段落，追加到 novel-writer/references/writing-techniques.md
+├── emotion-curve-append.md     ← 🏷️ 段落，追加到 novel-writer/references/emotion-curve.md（如适用）
+└── slim/                       ← 精简版（每文件~500-800字）
+    ├── plot-design-slim.md
+    ├── character-design-slim.md
+    └── writing-techniques-slim.md
 ```
 
 ---
@@ -178,16 +199,28 @@ novel-analyzer/output/{novel-name}/
 输出：
 ```
 novel-analyzer/output/{genre}-tropes/
-├── {genre}-structure.md    ← 该类型的剧情模板库
-├── {genre}-characters.md   ← 该类型的角色原型库
-├── {genre}-techniques.md   ← 该类型的写作技法库
-└── batch-analysis.md       ← 批量分析摘要（人读）
+├── plot-design-append.md       ← 合并去重后的 🏷️ 段落
+├── character-design-append.md  ← 合并去重后的 🏷️ 段落
+├── writing-techniques-append.md← 合并去重后的 🏷️ 段落
+├── emotion-curve-append.md     ← 合并去重后的 🏷️ 段落（如适用）
+├── batch-analysis.md           ← 批量分析摘要（人读）
+└── slim/                       ← 精简版
+    ├── plot-design-slim.md
+    ├── character-design-slim.md
+    └── writing-techniques-slim.md
 ```
 
 #### Step 3：安装到 novel-writer
 
-将最终套路库文件复制到 `~/.openclaw/skills/novel-writer/references/` 下，
-Writer 写作时自动加载。
+将 🏷️ 段落**追加**（非覆盖）到 novel-writer 的对应 reference 文件末尾：
+- `plot-design-append.md` 内容 → 追加到 `~/.openclaw/skills/novel-writer/references/plot-design.md` 末尾
+- `character-design-append.md` 内容 → 追加到 `~/.openclaw/skills/novel-writer/references/character-design.md` 末尾
+- `writing-techniques-append.md` 内容 → 追加到 `~/.openclaw/skills/novel-writer/references/writing-techniques.md` 末尾
+- `emotion-curve-append.md` 内容 → 追加到 `~/.openclaw/skills/novel-writer/references/emotion-curve.md` 末尾
+
+同时更新 `genre-tropes.md` 的索引，添加该类型的条目。
+
+slim 文件追加到 `~/.openclaw/skills/novel-writer/references/slim/` 下对应文件。
 
 ---
 
