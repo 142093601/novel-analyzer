@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "novel_name": "重生后，我把订婚宴变成了修罗场",
+    "genre": "重生复仇"
+  },
+  "cast_config": {
+    "protagonist_count": 1,
+    "protagonist_gender": "女",
+    "required_archetypes": [
+      {"archetype": "重生复仇女主", "function": "承载读者代入，执行复仇计划", "frequency": "10/10篇重生文"},
+      {"archetype": "渣男未婚夫", "function": "制造冲突，提供打脸对象", "frequency": "9/10篇"},
+      {"archetype": "白莲花女配", "function": "表面甜实际毒，制造情感冲突", "frequency": "8/10篇"}
+    ],
+    "optional_archetypes": [
+      {"archetype": "忠犬男主", "function": "正牌男主，提供情感支持和外部助力", "frequency": "7/10篇"},
+      {"archetype": "恶毒继母", "function": "幕后推手，家族阴谋的执行者", "frequency": "6/10篇"},
+      {"archetype": "正义盟友", "function": "律师/老员工等，提供关键证据和帮助", "frequency": "5/10篇"}
+    ],
+    "total_range": "5-8人"
+  },
+  "character_archetypes": [
+    {
+      "archetype_name": "重生复仇女主",
+      "traits": ["隐忍", "果决", "擅长伪装", "信息优势（重生记忆）"],
+      "typical_arc": "前世被背叛致死 → 重生觉醒 → 假装正常暗中布局 → 收集证据 → 当众揭露 → 终极复仇",
+      "motivation": "讨回公道 + 查明父亲死因 + 保护林家财产",
+      "weakness": "前世的信任被辜负导致这一世难以信任任何人",
+      "language_profile": {
+        "sentence_pattern": "短句为主，陈述句多，内心独白用反问",
+        "vocabulary": "表面温柔克制，内心狠辣果决",
+        "catchphrase_patterns": ["这一世", "前世的我", "可惜", "等着瞧"],
+        "example_lines": [
+          "这一世，我绝不会让你们得逞。",
+          "林晚，你的演技，能骗我多久？",
+          "我笑了笑，心里却在冷笑。"
+        ]
+      }
+    },
+    {
+      "archetype_name": "渣男未婚夫",
+      "traits": ["虚伪", "贪婪", "表面深情", "精于算计"],
+      "typical_arc": "假意追求 → 婚后逐渐暴露 → 真相被揭 → 身败名裂",
+      "motivation": "获取林氏集团财产",
+      "weakness": "贪婪和虚伪经不起考验",
+      "language_profile": {
+        "sentence_pattern": "温柔长句为主，甜言蜜语密集",
+        "vocabulary": "深情款款，承诺式表达",
+        "catchphrase_patterns": ["念念", "我会一辈子对你好的", "不管怎样"],
+        "example_lines": [
+          "念念，我会一辈子对你好的。",
+          "不管你有没有钱，我都爱你。"
+        ]
+      }
+    },
+    {
+      "archetype_name": "白莲花女配",
+      "traits": ["表面乖巧", "内心恶毒", "演技好", "野心大"],
+      "typical_arc": "伪装乖巧 → 逐渐暴露野心 → 被揭穿 → 恶有恶报",
+      "motivation": "抢夺姐姐的一切（财产+男人）",
+      "weakness": "贪婪导致行动过早暴露",
+      "language_profile": {
+        "sentence_pattern": "甜腻语气（伪装期）→ 尖酸刻薄（暴露后）",
+        "vocabulary": "装无辜/装关心 → 撕破脸后恶语相向",
+        "example_lines": [
+          "姐姐今天真漂亮，姐夫你可要好好珍惜姐姐啊。",
+          "她爸爸已经死了，遗嘱上写的是她继承公司。"
+        ]
+      }
+    },
+    {
+      "archetype_name": "忠犬男主",
+      "traits": ["正直", "强大", "默默守护", "正义感强"],
+      "typical_arc": "暗中观察女主 → 主动提供帮助 → 并肩作战 → 在一起",
+      "motivation": "真心欣赏女主 + 维护正义",
+      "language_profile": {
+        "sentence_pattern": "简洁有力，行动多于言语",
+        "vocabulary": "直接坦诚，偶尔温柔",
+        "example_lines": [
+          "你不是一个人。",
+          "这一世，我不会再让你受到任何伤害。"
+        ]
+      }
+    }
+  ],
+  "relationship_patterns": [
+    {
+      "pattern_name": "渣男+女主+白莲花三角",
+      "characters": ["重生女主", "渣男未婚夫", "白莲花女配"],
+      "typical_arc": "女主信任渣男 → 发现白莲花插足 → 揭露两人合谋 → 身败名裂",
+      "trigger_event": "女主重生/发现证据",
+      "frequency": "8/10篇重生文"
+    },
+    {
+      "pattern_name": "女主+忠犬守护",
+      "characters": ["重生女主", "忠犬男主"],
+      "typical_arc": "男主注意到女主 → 提供帮助 → 并肩作战 → 相爱",
+      "trigger_event": "女主在关键时刻被男主帮助",
+      "frequency": "7/10篇"
+    },
+    {
+      "pattern_name": "女主+恶毒继母",
+      "characters": ["重生女主", "恶毒继母"],
+      "typical_arc": "伪装慈母 → 女主识破 → 正面交锋 → 揭露阴谋",
+      "trigger_event": "女主发现继母真面目",
+      "frequency": "6/10篇"
+    }
+  ],
+  "arc_templates": [
+    {
+      "arc_type": "复仇觉醒型",
+      "start": "天真善良，被渣男和白莲花蒙蔽",
+      "trigger": "被背叛致死，重生回到关键节点",
+      "transition": "觉醒→冷酷布局→在爱与恨间找到平衡",
+      "end": "强大但不失去人性，获得真正的爱情"
+    }
+  ]
+}
